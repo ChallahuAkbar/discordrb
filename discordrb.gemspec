@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'ffi', '>= 1.9.24'
   spec.add_dependency 'opus-ruby'
-  spec.add_dependency 'rbnacl', '~> 6.0'
+  spec.add_dependency 'rbnacl', '~> 7.0'
   spec.add_dependency 'rest-client', '>= 2.1.0.rc1'
   spec.add_dependency 'websocket-client-simple', '>= 0.3.0'
 
@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'redcarpet', '~> 3.4.0' # YARD markdown formatting
   spec.add_development_dependency 'rspec', '~> 3.8.0'
   spec.add_development_dependency 'rspec-prof', '~> 0.0.7'
-  spec.add_development_dependency 'rubocop', '~> 0.70.0'
+  spec.add_development_dependency 'rubocop', '~> 0.71.0'
   spec.add_development_dependency 'rubocop-performance', '~> 1.0'
   spec.add_development_dependency 'simplecov', '~> 0.16.0'
   spec.add_development_dependency 'yard', '~> 0.9.9'
