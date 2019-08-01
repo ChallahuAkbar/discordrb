@@ -23,7 +23,7 @@ See also: [Documentation](https://www.rubydoc.info/gems/discordrb), [Tutorials](
 
 ## Dependencies
 
-* Ruby >= 2.5 supported
+* Ruby >= 2.6 supported
 * An installed build system for native extensions (on Windows, make sure you download the "Ruby+Devkit" version of [RubyInstaller](https://rubyinstaller.org/downloads/))
 
 ### Voice dependencies
@@ -94,7 +94,7 @@ To enable the changes
 
 For example
 
-    C:/Ruby25-x64/lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- ffi_c (LoadError)
+    C:/Ruby25-x64/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- ffi_c (LoadError)
 
 Your ffi setup is screwed up, first run `gem uninstall ffi` (uninstall all versions if it asks you, say yes to any unmet dependencies), then run `gem install ffi --platform=ruby` to fix it. If it says something about build tools, follow the steps in the first troubleshooting section.
 
