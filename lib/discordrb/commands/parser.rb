@@ -248,7 +248,7 @@ module Discordrb::Commands
 
         first_space = command.index ' '
         command_name = first_space ? command[0..first_space - 1] : command
-        arguments = first_space ? command[first_space + 1..-1] : ''
+        arguments = first_space ? command[first_space + 1..] : ''
 
         # Append a previous sign if none is present
         arguments += @attributes[:previous] unless arguments.include? @attributes[:previous]
@@ -320,7 +320,7 @@ module Discordrb::Commands
           arg.split ' '
         end
 
-        chain = chain[chain_args_index + 1..-1]
+        chain = chain[chain_args_index + 1..]
       end
 
       [chain_args, chain]

@@ -62,7 +62,7 @@ module Discordrb::Voice
       # Wait for a UDP message
       message = @socket.recv(70)
       ip = message[4..-3].delete("\0")
-      port = message[-2..-1].to_i
+      port = message[-2..].to_i
       [ip, port]
     end
 
